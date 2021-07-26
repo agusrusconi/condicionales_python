@@ -17,13 +17,27 @@ texto_2 = '7'
 # se utiliza el operador mayor o menor con Strings (textos)
 # Imprima en pantalla según corresponda
 
+if texto_1 > texto_2:
+    print("el texto_1 es mayor alfabeticamente")
+else:
+    print("el texto_2 es mayor alfabeticamente")
+
 # 2-Transforma esas variables tipo texto en variables numéricas con (int)
 # y almacénalas en nuevas variables.
+
+v_numerica_1 = int(texto_1)
+v_numerica_2 = int(texto_2)
+
 # Compare las nuevas variables para ver cual es mayor o menor
 # utilizando los operadores correspondientes
+
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
 
+if v_numerica_1 > v_numerica_2:
+    print("{} es mayor a {}".format(v_numerica_1, v_numerica_2))
+else:
+    print("{} es mayor a {}".format(v_numerica_2, v_numerica_1))
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
 # Siendo números tiene sentido, pero son caracteres, texto,
