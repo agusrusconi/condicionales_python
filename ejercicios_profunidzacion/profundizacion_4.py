@@ -33,3 +33,41 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra1 = str(input("ingrese la primer palabra: "))
+palabra2 = str(input("ingrese la segunda palabra: "))
+palabra3 = str(input("ingrese la tercer palabra: "))
+
+print("pulse 1 si quiere ordenar sus palabras por orden alfabetico de mayor a menor")
+print("pulse 2 si quiere ordenar sus palabras por cantidad de letras de mayor a menor")
+
+respuesta = float(input("ingrese su respuesta a continuación: "))
+
+if respuesta == 1: 
+    if palabra1 > palabra2 and palabra2 > palabra3:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra1, palabra2, palabra3))
+    elif palabra1 > palabra3 and palabra3 > palabra2:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra1, palabra3, palabra2))
+    elif palabra2 > palabra1 and palabra1 > palabra3:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra2, palabra1, palabra3))
+    elif palabra2 > palabra3 and palabra3 > palabra1:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra2, palabra3, palabra1))
+    elif palabra3 > palabra1 and palabra1 > palabra2:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra3, palabra1, palabra2))
+    elif palabra3 > palabra2 and palabra2 > palabra1:
+        print("el orden de sus palabras por orden alfabetico es: {} {} {}".format(palabra3, palabra2, palabra1))
+elif respuesta == 2:
+    if len(palabra1) > len(palabra2) and len(palabra2) > len(palabra3):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}".format(palabra1, palabra2, palabra3))
+    elif len(palabra1) > len(palabra3) and len(palabra3) > len(palabra2):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}".format(palabra1, palabra3, palabra2))
+    elif len(palabra2) > len(palabra1) and len(palabra1) > len(palabra3):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}".format(palabra2, palabra1, palabra3))
+    elif len(palabra2) >len(palabra3) and len(palabra3) > len(palabra1):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}".format(palabra2, palabra3, palabra1))
+    elif len(palabra3) > len(palabra1) and len(palabra1) > len(palabra2):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}". format(palabra3, palabra1, palabra2))
+    elif len(palabra3) > len(palabra2) and len(palabra2) > len(palabra1):
+        print("el orden de sus palabras por cantidad de letras es: {} {} {}".format(palabra3, palabra2, palabra1))
+else: 
+    print("el numero insertado no es válido")
